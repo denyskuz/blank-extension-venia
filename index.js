@@ -8,6 +8,7 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import * as template from './utils/template.js';
 import shell from 'shelljs';
+import figlet from "figlet";
 
 const CURR_DIR = process.cwd();
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -56,6 +57,7 @@ const QUESTIONS = [
   },
 ];
 
+console.log(figlet.textSync("Blank Venia Extension"));
 inquirer.prompt(QUESTIONS).then(answers => {
     answers = Object.assign({}, answers, yargs.argv);
     const projectChoice = answers['project-choice'];

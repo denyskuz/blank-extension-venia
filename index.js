@@ -48,7 +48,7 @@ const QUESTIONS = [
     name: 'project-name',
     type: 'input',
     message: 'Project name:',
-    default: 'Sample-Project',
+    default: 'CustomExtension',
     validate: function (input) {
       if (/^([A-Za-z\-\\_\d])+$/.test(input)) return true;
       else return 'Project name may only include letters, numbers, underscores and hashes.';
@@ -98,7 +98,6 @@ const SKIP_FILES = ['node_modules', '.template.json'];
 
 function createDirectoryContents(templatePath, options) {
     const { projectName, author, description } = options;
-    const test = options.projectName;
     // read all files/folders (1 level) from template folder
     const filesToCreate = fs.readdirSync(templatePath);
     // loop each file/folder

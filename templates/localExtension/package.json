@@ -1,0 +1,12 @@
+{
+  "name": "<%= projectName %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "main": "./index.js",
+  "author": "<%= author %>",
+  "pwa-studio": {
+    "targets": {
+      "intercept": "./intercept.js"
+    }
+  }
+}

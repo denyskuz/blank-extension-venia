@@ -58,6 +58,7 @@ const QUESTIONS = [
 ];
 
 console.log(figlet.textSync("Blank Venia Extension"));
+
 inquirer.prompt(QUESTIONS).then(answers => {
     answers = Object.assign({}, answers, yargs.argv);
     const projectChoice = answers['project-choice'];
@@ -103,7 +104,6 @@ function createDirectoryContents(templatePath, options) {
     // loop each file/folder
     filesToCreate.forEach(file => {
         const origFilePath = path.join(templatePath, file);
-        
         // get stats about the current file
         const stats = fs.statSync(origFilePath);
     

@@ -1,6 +1,6 @@
 {
   "name": "blank-extension-venia",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Blank extension for Venia PWA.",
   "main": "index.js",
   "type": "module",

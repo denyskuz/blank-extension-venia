@@ -1,7 +1,7 @@
 {
   "name": "blank-extension-venia",
-  "version": "1.0.5",
-  "description": "Blank extension for Venia PWA.",
+  "version": "1.0.8",
+  "description": "It is the library with a blank folder and files for quickly creating an extension for Magento Venia",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,22 @@
     "template-cli": "./index.js"
   },
   "author": "denyskuz",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+		"opensource",
+		"project",
+		"magento",
+		"@magento",
+    "template",
+		"boilerplate",
+		"pwa",
+		"venia",
+    "extensions"
+	],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denyskuz/blank-extension-venia"
+  },
   "dependencies": {
     "ejs": "^3.1.8",
     "figlet": "^1.5.2",

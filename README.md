@@ -81,3 +81,7 @@ fs.readdirSync(__dirname + '/src/targets/').forEach( file => {
    require('<%= projectVendorName %>/src/targets/' + file)(targets);
 });
 ```
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
